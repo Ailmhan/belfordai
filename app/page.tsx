@@ -51,13 +51,13 @@ export default function FunctionalityPage() {
             radius: "full",
             variant: "shadow",
           })}
-          href={siteConfig.links.docs}
+          href="/try-it-out"
         >
           Try it Out
         </Link>
       </div>
 
-      <div className="mt-72 grid gap-16 grid-cols-1 md:grid-cols-2 lg:grid-cols-2 max-w-screen-xl px-4 mx-auto">
+      <div className="mt-48 grid gap-16 grid-cols-1 md:grid-cols-2 lg:grid-cols-2 max-w-screen-xl px-4 mx-auto">
         {features.map((feature, index) => (
           <Card key={index} className="h-[400px] flex flex-col">
             <CardBody className="p-6 flex flex-col items-center justify-center">

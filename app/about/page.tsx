@@ -3,7 +3,7 @@ import {Card, CardHeader, CardBody, CardFooter, Divider, Link, Image} from "@nex
 
 export default function AboutPage() {
   return (
-    <Card className="max-w-[400px]">
+    <Card className="max-w-[700px]">
       <CardHeader className="flex gap-3">
         <Image
           alt="nextui logo"
@@ -13,22 +13,23 @@ export default function AboutPage() {
           width={40}
         />
         <div className="flex flex-col">
-          <p className="text-md">NextUI</p>
-          <p className="text-small text-default-500">nextui.org</p>
+          <p className="text-md">Belford AI</p>
+          <p className="text-small text-default-500">belford.ai</p>
         </div>
       </CardHeader>
       <Divider/>
       <CardBody>
-        <p>Make beautiful websites regardless of your design experience.</p>
+      Belford AI it is Calling AI solution for business which can make thousands cold calls in different languages per minute at one moment
+Also Belford AI have use-case with 24/7 customer support and consultation, with transfer function to real-person phone number. Belford AI can make API calls to external API systems as CRM and ERP system to collect your results data or make as example reservations to table in restauran or make a order a meeting to particular time . You can customize conversation flow of Call by your own and go to market at this day. You can start make a sales today 
       </CardBody>
       <Divider/>
       <CardFooter>
         <Link
           isExternal
           showAnchorIcon
-          href="https://github.com/nextui-org/nextui"
+          href="https://enlightenedminds.io/our-portfolio/next-gen-technologies"
         >
-          Visit source code on GitHub.
+          Powered by NextGenTechnologies
         </Link>
       </CardFooter>
     </Card>

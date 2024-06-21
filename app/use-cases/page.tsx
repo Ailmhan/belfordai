@@ -39,7 +39,7 @@ const NewSection = () => {
                 </div>
               }
             >
-              <p>See the volume of keyword mentions across calls to understand customers' priorities. Visualize conversation trends for deeper business intelligence.</p>
+              <p>See the volume of keyword mentions across calls to understand customers priorities. Visualize conversation trends for deeper business intelligence.</p>
             </AccordionItem>
           </Accordion>
         </div>
