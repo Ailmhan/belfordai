@@ -1,12 +1,21 @@
 import React from "react";
-import { Card, CardHeader, CardBody, CardFooter, Image, Button } from "@nextui-org/react";
+import {
+  Card,
+  CardHeader,
+  CardBody,
+  CardFooter,
+  Image,
+  Button,
+} from "@nextui-org/react";
 
 export default function FunctionalityPage() {
   return (
     <div className="max-w-screen-xl gap-4 grid grid-cols-12 px-4 mx-auto">
       <Card className="col-span-12 sm:col-span-4 h-[300px]">
         <CardHeader className="absolute z-10 top-1 flex-col !items-start">
-          <h4 className="text-white font-medium text-large">Real-Time Modifications</h4>
+          <h4 className="text-white font-medium text-large">
+            Real-Time Modifications
+          </h4>
         </CardHeader>
         <Image
           removeWrapper
@@ -17,7 +26,9 @@ export default function FunctionalityPage() {
       </Card>
       <Card className="col-span-12 sm:col-span-4 h-[300px]">
         <CardHeader className="absolute z-10 top-1 flex-col !items-start">
-          <h4 className="text-white font-medium text-large">Live Feed and Call Monitoring</h4>
+          <h4 className="text-white font-medium text-large">
+            Live Feed and Call Monitoring
+          </h4>
         </CardHeader>
         <Image
           removeWrapper
@@ -28,7 +39,9 @@ export default function FunctionalityPage() {
       </Card>
       <Card className="col-span-12 sm:col-span-4 h-[300px]">
         <CardHeader className="absolute z-10 top-1 flex-col !items-start">
-          <h4 className="text-white font-medium text-large">1000 calls per on minute</h4>
+          <h4 className="text-white font-medium text-large">
+            1000 calls per on minute
+          </h4>
         </CardHeader>
         <Image
           removeWrapper
@@ -37,9 +50,14 @@ export default function FunctionalityPage() {
           src="https://images.ctfassets.net/kftzwdyauwt9/9303995f-6ada-40ad-76fbe9bf02ea/79b67763dd00b101bcf1e21eff248aca/robots-that-learn.jpg?w=640&q=90&fm=webp"
         />
       </Card>
-      <Card isFooterBlurred className="w-full h-[300px] col-span-12 sm:col-span-6">
+      <Card
+        isFooterBlurred
+        className="w-full h-[300px] col-span-12 sm:col-span-6"
+      >
         <CardHeader className="absolute z-10 top-1 flex-col items-start">
-          <h4 className="text-white font-medium text-2xl">Secure Authentication</h4>
+          <h4 className="text-white font-medium text-2xl">
+            Secure Authentication
+          </h4>
         </CardHeader>
         <Image
           removeWrapper
@@ -49,13 +67,22 @@ export default function FunctionalityPage() {
         />
         <CardFooter className="absolute bg-white/30 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between">
           <div>
-            <p className="text-black text-tiny">Add an extra layer of protection to your account with two-factor authentication, or use Single Sign-On to login with your existing identity provider.</p>
+            <p className="text-black text-tiny">
+              Add an extra layer of protection to your account with two-factor
+              authentication, or use Single Sign-On to login with your existing
+              identity provider.
+            </p>
           </div>
         </CardFooter>
       </Card>
-      <Card isFooterBlurred className="w-full h-[300px] col-span-12 sm:col-span-6">
+      <Card
+        isFooterBlurred
+        className="w-full h-[300px] col-span-12 sm:col-span-6"
+      >
         <CardHeader className="absolute z-10 top-1 flex-col items-start">
-          <h4 className="text-white/90 font-medium text-xl">Advanced Analytics</h4>
+          <h4 className="text-white/90 font-medium text-xl">
+            Advanced Analytics
+          </h4>
         </CardHeader>
         <Image
           removeWrapper
@@ -65,13 +92,18 @@ export default function FunctionalityPage() {
         />
         <CardFooter className="absolute bg-black/40 bottom-0 z-10 border-t-1 border-default-600 dark:border-default-100">
           <div className="flex flex-grow gap-2 items-center">
-            <p className="text-tiny text-white/60">Track trends in customer communication and team performance, and monitor key call metrics all in one place.</p>
+            <p className="text-tiny text-white/60">
+              Track trends in customer communication and team performance, and
+              monitor key call metrics all in one place.
+            </p>
           </div>
         </CardFooter>
       </Card>
       <Card className="col-span-12 sm:col-span-4 h-[300px]">
         <CardHeader className="absolute z-10 top-1 flex-col !items-start">
-          <h4 className="text-white font-medium text-large">Webhooks and API</h4>
+          <h4 className="text-white font-medium text-large">
+            Webhooks and API
+          </h4>
         </CardHeader>
         <Image
           removeWrapper
@@ -81,13 +113,18 @@ export default function FunctionalityPage() {
         />
         <CardFooter className="absolute bg-black/40 bottom-0 z-10 border-t-1 border-default-600 dark:border-default-100">
           <div className="flex flex-grow gap-2 items-center">
-            <p className="text-tiny text-white/60">Connect our phone system to your everyday tools or build a custom workflow.</p>
+            <p className="text-tiny text-white/60">
+              Connect our phone system to your everyday tools or build a custom
+              workflow.
+            </p>
           </div>
         </CardFooter>
       </Card>
       <Card className="col-span-12 sm:col-span-4 h-[300px]">
         <CardHeader className="absolute z-10 top-1 flex-col !items-start">
-          <h4 className="text-white font-medium text-large">IVR and Call Routing</h4>
+          <h4 className="text-white font-medium text-large">
+            IVR and Call Routing
+          </h4>
         </CardHeader>
         <Image
           removeWrapper
@@ -97,7 +134,11 @@ export default function FunctionalityPage() {
         />
         <CardFooter className="absolute bg-black/40 bottom-0 z-10 border-t-1 border-default-600 dark:border-default-100">
           <div className="flex flex-grow gap-2 items-center">
-            <p className="text-tiny text-white/60">Automatically guide callers to the correct team every time by setting up a smart IVR directory or customizing distribution and ring rules.</p>
+            <p className="text-tiny text-white/60">
+              Automatically guide callers to the correct team every time by
+              setting up a smart IVR directory or customizing distribution and
+              ring rules.
+            </p>
           </div>
         </CardFooter>
       </Card>
@@ -113,11 +154,13 @@ export default function FunctionalityPage() {
         />
         <CardFooter className="absolute bg-black/40 bottom-0 z-10 border-t-1 border-default-600 dark:border-default-100">
           <div className="flex flex-grow gap-2 items-center">
-            <p className="text-tiny text-white/60">Assign everyone on the team a personalized three-digit extension their colleagues can quickly dial.</p>
+            <p className="text-tiny text-white/60">
+              Assign everyone on the team a personalized three-digit extension
+              their colleagues can quickly dial.
+            </p>
           </div>
         </CardFooter>
       </Card>
-    
     </div>
   );
 }

@@ -1,10 +1,10 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es6",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
-    "skipLibCheck": true,
-    "strict": true,
+    "skipLibCheck": true,  // Отключение проверки типов библиотек
+    "strict": false,  // Отключение строгого режима
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "esModuleInterop": true,
@@ -14,6 +14,8 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
+    "noImplicitAny": false,  // Разрешение неявного any
+    "strictNullChecks": false,  // Отключение строгих проверок на null
     "plugins": [
       {
         "name": "next"

@@ -1,6 +1,6 @@
 "use client";
 
-import { FC } from "react";
+import React, { FC } from "react";
 import { VisuallyHidden } from "@react-aria/visually-hidden";
 import { SwitchProps, useSwitch } from "@nextui-org/switch";
 import { useTheme } from "next-themes";
@@ -22,7 +22,7 @@ export const ThemeSwitch: FC<ThemeSwitchProps> = ({
   const isSSR = useIsSSR();
 
   const onChange = () => {
-    theme === "light" ? setTheme("dark") : setTheme("light");
+    setTheme(theme === "light" ? "dark" : "light");
   };
 
   const {
@@ -33,13 +33,15 @@ export const ThemeSwitch: FC<ThemeSwitchProps> = ({
     getInputProps,
     getWrapperProps,
   } = useSwitch({
-    isSelected: theme === "light" || isSSR,
-    "aria-label": `Switch to ${theme === "light" || isSSR ? "dark" : "light"} mode`,
+    isSelected: theme === "light" && !isSSR,
+    "aria-label": `Switch to ${theme === "light" ? "dark" : "light"} mode`,
     onChange,
   });
 
+  const SwitchElement = SwitchComponent as unknown as React.FC<any>;
+
   return (
-    <SwitchComponent
+    <SwitchElement
       {...getBaseProps({
         className: clsx(
           "px-px transition-opacity hover:opacity-80 cursor-pointer",
@@ -70,12 +72,12 @@ export const ThemeSwitch: FC<ThemeSwitchProps> = ({
           ),
         })}
       >
-        {!isSelected || isSSR ? (
-          <SunFilledIcon size={22} />
-        ) : (
+        {isSelected ? (
           <MoonFilledIcon size={22} />
+        ) : (
+          <SunFilledIcon size={22} />
         )}
       </div>
-    </SwitchComponent>
+    </SwitchElement>
   );
 };

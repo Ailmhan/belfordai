@@ -1,5 +1,13 @@
 import React from "react";
-import {Card, CardHeader, CardBody, CardFooter, Divider, Link, Image} from "@nextui-org/react";
+import {
+  Card,
+  CardHeader,
+  CardBody,
+  CardFooter,
+  Divider,
+  Link,
+  Image,
+} from "@nextui-org/react";
 
 export default function AboutPage() {
   return (
@@ -17,12 +25,19 @@ export default function AboutPage() {
           <p className="text-small text-default-500">belford.ai</p>
         </div>
       </CardHeader>
-      <Divider/>
+      <Divider />
       <CardBody>
-      Belford AI it is Calling AI solution for business which can make thousands cold calls in different languages per minute at one moment
-Also Belford AI have use-case with 24/7 customer support and consultation, with transfer function to real-person phone number. Belford AI can make API calls to external API systems as CRM and ERP system to collect your results data or make as example reservations to table in restauran or make a order a meeting to particular time . You can customize conversation flow of Call by your own and go to market at this day. You can start make a sales today 
+        Belford AI it is Calling AI solution for business which can make
+        thousands cold calls in different languages per minute at one moment
+        Also Belford AI have use-case with 24/7 customer support and
+        consultation, with transfer function to real-person phone number.
+        Belford AI can make API calls to external API systems as CRM and ERP
+        system to collect your results data or make as example reservations to
+        table in restauran or make a order a meeting to particular time . You
+        can customize conversation flow of Call by your own and go to market at
+        this day. You can start make a sales today
       </CardBody>
-      <Divider/>
+      <Divider />
       <CardFooter>
         <Link
           isExternal
@@ -35,4 +50,3 @@ Also Belford AI have use-case with 24/7 customer support and consultation, with 
     </Card>
   );
 }
-

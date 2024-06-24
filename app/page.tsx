@@ -1,5 +1,12 @@
 import React from "react";
-import { Card, CardHeader, CardBody, CardFooter, Image, Button } from "@nextui-org/react";
+import {
+  Card,
+  CardHeader,
+  CardBody,
+  CardFooter,
+  Image,
+  Button,
+} from "@nextui-org/react";
 import { Link } from "@nextui-org/link";
 import { button as buttonStyles } from "@nextui-org/theme";
 import { siteConfig } from "@/config/site";
@@ -9,23 +16,31 @@ export default function FunctionalityPage() {
   const features = [
     {
       title: "Convert prospects with winning sales calls",
-      description: "Ensure sales calls are engaging, balanced, and effective. Review pitches faster and coach sales reps to drive calls that convert.",
-      image: "https://a.storyblok.com/f/157376/1000x401/c8012b3444/set-up-in-seconds-3.png/m/769x0"
+      description:
+        "Ensure sales calls are engaging, balanced, and effective. Review pitches faster and coach sales reps to drive calls that convert.",
+      image:
+        "https://a.storyblok.com/f/157376/1000x401/c8012b3444/set-up-in-seconds-3.png/m/769x0",
     },
     {
       title: "Turn support calls into customer loyalty",
-      description: "Discover common points of friction in support calls. Coach agents to deliver seamless customer experiences that consistently boost CSAT.",
-      image: "https://a.storyblok.com/f/157376/1000x401/87b5b724ce/set-up-in-seconds-4.png/m/769x0"
+      description:
+        "Discover common points of friction in support calls. Coach agents to deliver seamless customer experiences that consistently boost CSAT.",
+      image:
+        "https://a.storyblok.com/f/157376/1000x401/87b5b724ce/set-up-in-seconds-4.png/m/769x0",
     },
     {
       title: "Gain control over your call review process",
-      description: "Focus on the words that matter. Search across all calls for key terms and phrases and pinpoint moments that need a deeper review.",
-      image: "https://a.storyblok.com/f/157376/1000x401/07a67c0fcd/set-up-in-seconds-2.png/m/769x0"
+      description:
+        "Focus on the words that matter. Search across all calls for key terms and phrases and pinpoint moments that need a deeper review.",
+      image:
+        "https://a.storyblok.com/f/157376/1000x401/07a67c0fcd/set-up-in-seconds-2.png/m/769x0",
     },
     {
       title: "Coach your team with more context",
-      description: "Train agents with a clear understanding of past performance, so you can focus on developing the right skills. Drive CSAT and conversion over time as teams have more meaningful conversations.",
-      image: "https://a.storyblok.com/f/157376/1000x401/31b43f30a5/set-up-in-seconds.png/m/769x0"
+      description:
+        "Train agents with a clear understanding of past performance, so you can focus on developing the right skills. Drive CSAT and conversion over time as teams have more meaningful conversations.",
+      image:
+        "https://a.storyblok.com/f/157376/1000x401/31b43f30a5/set-up-in-seconds.png/m/769x0",
     },
   ];
 
@@ -35,9 +50,7 @@ export default function FunctionalityPage() {
         <h1 className={title()}>Welcome to &nbsp;</h1>
         <h1 className={title({ color: "green" })}>Belford.ai&nbsp;</h1>
         <br />
-        <h1 className={title()}>
-          Revolutionizing sales with AI
-        </h1>
+        <h1 className={title()}>Revolutionizing sales with AI</h1>
         <h2 className={subtitle({ class: "mt-4" })}>
           Your customer support and revenue grow 24/7/365
         </h2>
@@ -67,7 +80,9 @@ export default function FunctionalityPage() {
                 className="mb-4 w-full h-full object-cover"
                 src={feature.image}
               />
-              <h4 className="text-white font-medium text-large mb-2">{feature.title}</h4>
+              <h4 className="text-white font-medium text-large mb-2">
+                {feature.title}
+              </h4>
               <p className="text-center">{feature.description}</p>
             </CardBody>
           </Card>

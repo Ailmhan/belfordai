@@ -5,9 +5,9 @@ export default function PricingLayout({
 }) {
   return (
     <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-1">
-    <div className="inline-block max-w-6xl text-center justify-center">
-      {children}
-    </div>
-  </section>
+      <div className="inline-block max-w-6xl text-center justify-center">
+        {children}
+      </div>
+    </section>
   );
 }
