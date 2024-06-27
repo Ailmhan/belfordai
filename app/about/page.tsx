@@ -6,18 +6,17 @@ import {
   CardFooter,
   Divider,
   Link,
-  Image,
 } from "@nextui-org/react";
+import Image from "next/image";
 
 export default function AboutPage() {
   return (
     <Card className="max-w-[700px]">
       <CardHeader className="flex gap-3">
-        <Image
-          alt="nextui logo"
+      <Image
+          alt="Belford AI"
           height={40}
-          radius="sm"
-          src="https://avatars.githubusercontent.com/u/86160567?s=200&v=4"
+          src="/images/wolf.png" // Replace with the actual path or URL to your logo
           width={40}
         />
         <div className="flex flex-col">

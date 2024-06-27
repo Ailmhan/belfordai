@@ -62,20 +62,21 @@ export default function FunctionalityPage() {
           Try it Out
         </Link>
       </div>
+
       <div className="mt-48 grid gap-16 grid-cols-1 md:grid-cols-2 lg:grid-cols-2 max-w-screen-xl px-4 mx-auto">
         {features.map((feature, index) => (
           <Card key={index} className="h-[400px] flex flex-col">
-            <CardBody className="p-6 flex flex-col items-center justify-center">
+            <CardBody className="p-6 flex flex-col items-center justify-center text-center">
+              <div className="relative w-full h-48 mb-4">
               <Image
                 removeWrapper
                 alt={feature.title}
                 className="mb-4 w-full h-full object-cover"
                 src={feature.image}
               />
-              <h4 className="text-white font-medium text-large mb-2">
-                {feature.title}
-              </h4>
-              <p className="text-center">{feature.description}</p>
+              </div>
+              <h4 className="text-lg font-medium mb-2">{feature.title}</h4>
+              <p>{feature.description}</p>
             </CardBody>
           </Card>
         ))}
