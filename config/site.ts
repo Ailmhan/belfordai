@@ -39,7 +39,7 @@ export const siteConfig = {
       href: "/pricing",
     },
     {
-      label: "try-it-out",
+      label: "Try-it-out",
       href: "/try-it-out",
     },
     {

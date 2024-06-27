@@ -86,7 +86,7 @@ export default function PricingPage() {
                   </li>
                 ))}
               </ul>
-              <Button className="mt-8 w-full bg-green-500">Buy now</Button>
+              <Button className="mt-8 w-full bg-green-500"  as="a"  href="mailto:info@lwkcolab.com">Buy now</Button>
             </CardBody>
           </Card>
         ))}

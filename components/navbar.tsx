@@ -76,21 +76,32 @@ export const Navbar = () => {
         <div className="mx-4 mt-2 flex flex-col gap-2">
           {siteConfig.navMenuItems.map((item, index) => (
             <NavbarMenuItem key={`${item}-${index}`}>
-              <Link
-                color={
-                  index === 2
-                    ? "primary"
-                    : index === siteConfig.navMenuItems.length - 1
-                      ? "danger"
-                      : "foreground"
-                }
-                href="#"
-                size="lg"
-              >
-                {item.label}
-              </Link>
+              <NextLink href={item.href} passHref>
+                <Link
+                  color={
+                    index === 2
+                      ? "primary"
+                      : index === siteConfig.navMenuItems.length - 1
+                        ? "danger"
+                        : "foreground"
+                  }
+                  size="lg"
+                >
+                  {item.label}
+                </Link>
+              </NextLink>
             </NavbarMenuItem>
           ))}
+          <NavbarMenuItem>
+            <Button
+              as="a"
+              className="text-sm font-normal text-default-600 bg-default-100"
+              href="tel:+14154668457"
+              variant="flat"
+            >
+              Call Belford
+            </Button>
+          </NavbarMenuItem>
         </div>
       </NavbarMenu>
     </NextUINavbar>

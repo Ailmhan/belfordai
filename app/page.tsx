@@ -1,15 +1,8 @@
 import React from "react";
-import {
-  Card,
-  CardHeader,
-  CardBody,
-  CardFooter,
-  Image,
-  Button,
-} from "@nextui-org/react";
+import { Card, CardBody, Image } from "@nextui-org/react";
 import { Link } from "@nextui-org/link";
 import { button as buttonStyles } from "@nextui-org/theme";
-import { siteConfig } from "@/config/site";
+
 import { title, subtitle } from "@/components/primitives";
 
 export default function FunctionalityPage() {
@@ -69,7 +62,6 @@ export default function FunctionalityPage() {
           Try it Out
         </Link>
       </div>
-
       <div className="mt-48 grid gap-16 grid-cols-1 md:grid-cols-2 lg:grid-cols-2 max-w-screen-xl px-4 mx-auto">
         {features.map((feature, index) => (
           <Card key={index} className="h-[400px] flex flex-col">

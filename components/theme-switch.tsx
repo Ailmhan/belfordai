@@ -81,3 +81,4 @@ export const ThemeSwitch: FC<ThemeSwitchProps> = ({
     </SwitchElement>
   );
 };
+
